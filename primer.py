@@ -57,3 +57,16 @@ plt.xlabel("sigma")
 plt.ylabel("probabilidad")
 plt.title("SIGMA")
 plt.savefig('sigma.png')
+
+plt.figure(3, figsize=(8,4))
+
+dat = np.loadtxt("monthrg.dat") 
+
+plt.plot(dat[:,0], dat[:,1])
+plt.plot(dat[:,0], dat[:,2])
+plt.plot(dat[:,0], dat[:,3])
+plt.plot(dat[:,0], dat[:,4])
+plt.xlabel("Años")
+plt.ylabel("Y")
+plt.title("Fourier")
+plt.savefig("solar.png")
