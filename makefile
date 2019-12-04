@@ -1,4 +1,4 @@
-resultado.png sigma.png: primer.dat primer.py
+resultado.png sigma.png solar.png: primer.dat primer.py
 	python primer.py
 
 primer.dat  : primer.x
