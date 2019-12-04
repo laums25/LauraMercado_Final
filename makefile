@@ -10,3 +10,5 @@ primer.dat  : primer.x
 primer.x : primer.cpp
 	c++ primer.cpp -o primer.x
 	
+clean:
+	rm *.dat *.cpp *.x *.png
