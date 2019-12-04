@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 plt.figure(1, figsize=(8,4))
 
-plt.subplot(1,2,2)
+plt.subplot(1,2,1)
 data = np.loadtxt("primer.dat")
 
 plt.plot(data[:,0], data[:,1])
@@ -19,7 +19,12 @@ plt.xlabel('X')
 plt.ylabel('Y')
 
 
-plt.subplot(1,2,1)           
+plt.subplot(1,2,2)
+plt.plot(data[:,0], data[:,1])
+plt.xlabel("t")
+plt.ylabel("Y")
+plt.title("Tiempo")
+
             
 plt.savefig("resultado.png")
 
