@@ -62,10 +62,10 @@ plt.figure(3, figsize=(8,4))
 
 dat = np.loadtxt("monthrg.dat") 
 
+fourier = np.fft.fft(dat)
+print (fourier)
+
 plt.plot(dat[:,0], dat[:,1])
-plt.plot(dat[:,0], dat[:,2])
-plt.plot(dat[:,0], dat[:,3])
-plt.plot(dat[:,0], dat[:,4])
 plt.xlabel("Años")
 plt.ylabel("Y")
 plt.title("Fourier")
