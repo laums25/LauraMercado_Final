@@ -1,7 +1,4 @@
-sigma.png : primer.py
-	python primer.py
-
-resultado.png : primer.dat primer.py
+resultado.png sigma.png: primer.dat primer.py
 	python primer.py
 
 primer.dat  : primer.x
@@ -9,6 +6,3 @@ primer.dat  : primer.x
 
 primer.x : primer.cpp
 	c++ primer.cpp -o primer.x
-	
-clean:
-	rm *.dat *.cpp *.x *.png
