@@ -28,7 +28,7 @@ int main (){
     int i=0;
 	int j=0;
     
-    output=fopen("Ejercicio29.dat", "w");
+    output=fopen("primer.dat", "w");
 
     for(i=0; i < nx; i++){                           
         x=i*deltax;
